@@ -1,0 +1,18 @@
+[
+ "com.example.agent-loops.backup-pull",
+ "com.example.agent-loops.backup-push",
+ "com.example.agent-loops.content-sync",
+ "com.example.agent-loops.daemon-watch",
+ "com.example.agent-loops.daily-review",
+ "com.example.agent-loops.feed-ingest",
+ "com.example.agent-loops.idea-digest",
+ "com.example.agent-loops.loop-queue-digest",
+ "com.example.agent-loops.loop-queue-poller",
+ "com.example.agent-loops.loop-supervisor",
+ "com.example.agent-loops.loop-synthesis",
+ "com.example.agent-loops.loop-watchdog",
+ "com.example.agent-loops.nightly-worker",
+ "com.example.agent-loops.nightly-worker-briefing",
+ "com.example.agent-loops.revenue-sync",
+ "com.example.agent-loops.vault-hygiene"
+]

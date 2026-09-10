@@ -1,0 +1,48 @@
+# secrets
+.env
+.env.local
+
+# local overrides of the shipped .example configs
+loop-status/repos.json
+loop-design-audit/targets.json
+
+# runtime databases (every loop's SQLite state)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# logs / run artifacts
+logs/
+*.log
+
+# screenshots from loop-design-audit
+shots/
+
+# nightly worker scratch space
+worktrees/
+briefs/
+
+# human-approval queue spool/offsets/locks
+spool/
+*.lock
+*.lock.d/
+.poller.lock
+.tg_offset
+.nightly.lock
+
+# generated reports (regenerated on each run, not source)
+last-report.md
+meta-review-last.md
+
+# backup/scratch files
+*.bak
+*.bak-*
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS cruft
+.DS_Store

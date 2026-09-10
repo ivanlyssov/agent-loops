@@ -1,0 +1,11 @@
+# Example registry for coverage-check.sh. Real deployments keep this alongside their
+# actual scheduler config; this repo ships only an illustrative example.
+#
+# Each entry is a scheduled-agent name (matches the launchd label with the prefix
+# stripped, e.g. "backup-push" for "com.example.agent-loops.backup-push.plist").
+# supervision = "excluded" opts a name out of the coverage check — always with a
+# reason, so the exclusion is a decision on record, not a silent gap.
+
+["funnel-monitor"]
+supervision = "excluded"
+why = "event-triggered (WatchPaths), not scheduled — 'hasn't run recently' is expected"

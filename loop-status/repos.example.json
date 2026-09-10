@@ -1,0 +1,6 @@
+{
+  "_comment": "Repos daily-review.py should check for uncommitted changes, as {name: path relative to AGENT_LOOPS_HOME}. Copy to repos.json and edit — repos.json is gitignored so your own list doesn't leak into the harness's history.",
+  "app-one": "apps/app-one",
+  "app-two": "apps/app-two",
+  "app-three": "apps/app-three"
+}

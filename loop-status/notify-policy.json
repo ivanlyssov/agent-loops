@@ -1,0 +1,28 @@
+{
+  "_comment": "Who gets a Telegram message right away vs. who's batched into a digest. loop-run.sh reads this: if a label isn't in `immediate`, NOTIFY_SPOOL=1 is set and the run's output goes to the spool instead. Introduced after ~20 separate messages a day became unmanageable.",
+  "immediate": [
+    "loop-watchdog",
+    "daemon-watch",
+    "runtime-verify",
+    "prod-health",
+    "leads-watch",
+    "voice-briefing",
+    "backup-pull",
+    "backup-push",
+    "backup-cloud"
+  ],
+  "_immediate_why": {
+    "loop-watchdog": "P0 — the watchdog itself; stays silent while things are healthy, so a message means a loop has stopped",
+    "prod-health": "P0 — production is down",
+    "leads-watch": "P0 — a new lead is money on the table; only sends on a change",
+    "voice-briefing": "the morning voice briefing IS the digest, for the operator",
+    "backup-pull": "P0 — silent on success, only speaks on a backup failure",
+    "backup-push": "P0 — same",
+    "daemon-watch": "P0 — the daemon watchdog: silent while services are alive; a message means one went down",
+    "runtime-verify": "P0 — the execution registry has drifted from reality; silent while it matches"
+  },
+  "flush_at": [
+    "09:45",
+    "21:45"
+  ]
+}

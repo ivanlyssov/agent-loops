@@ -1,0 +1,11 @@
+{
+  "_comment": "Screens for the weekly design audit to look at. Copy to targets.json and edit — targets.json is gitignored so your own URLs don't leak into the harness's history. `ideas_md` is a path relative to AGENT_LOOPS_HOME; findings get appended there in a format loop-nightly/collect.py can parse as backlog items.",
+  "targets": [
+    {
+      "name": "marketing-site",
+      "url": "https://example.com",
+      "ideas_md": "apps/app-one/IDEAS.md",
+      "pages": ["/", "/pricing", "/contact"]
+    }
+  ]
+}

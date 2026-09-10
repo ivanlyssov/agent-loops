@@ -1,0 +1,11 @@
+{
+  "context": "A weekly knowledge synthesis for a solo operator running a few small projects. Must be concrete and actionable, not a recap of the week's news.",
+  "threshold": 0.6,
+  "criteria": [
+    {"id": "actionable", "q": "Are there at least 2 concrete actions/tools the operator could apply this week (not generic advice)?", "weight": 3},
+    {"id": "projects", "q": "Are the takeaways tied to specific projects rather than 'business in general'?", "weight": 2},
+    {"id": "no-fluff", "q": "Is the text free of filler: no motivational phrasing, no restating the obvious, no repeating the same point?", "weight": 2},
+    {"id": "structure", "q": "Is there structure: themes of the week / worth acting on / on the radar (or an equivalent)?", "weight": 1},
+    {"id": "fresh", "q": "Does the material feel new, rather than repeating what a generic weekly recap would say?", "weight": 1}
+  ]
+}

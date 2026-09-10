@@ -1,0 +1,10 @@
+{
+  "context": "A social-media content card for a small retail brand. Brand voice: confident and plain, no cliches like 'delicious' or 'amazing', only real prices/addresses/dates (or explicitly marked as placeholders).",
+  "threshold": 0.75,
+  "criteria": [
+    {"id": "no-fake-facts", "q": "Does the text contain NO invented prices, addresses, promotions, or dates (or are they clearly marked as placeholders)?", "weight": 4},
+    {"id": "brand-tone", "q": "Is the tone on-brand: plain and confident, without cliches like 'delicious', 'amazing', 'you won't believe'?", "weight": 2},
+    {"id": "cta", "q": "Is there exactly one clear call to action (order/visit/message), not three at once?", "weight": 2},
+    {"id": "complete", "q": "Is the card complete: post text + caption/hashtags + a description of the visual, nothing cut off?", "weight": 2}
+  ]
+}
